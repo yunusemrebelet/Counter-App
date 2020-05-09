@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Mono", monospace;
+}
+:root {
+  --black: #1c0f13;
+  --white: #eff9f0;
+}
+body {
+  min-height: 100vh;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+section h1,
+section h2 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+section button {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 7px 15px 7px 15px;
+  background-color: transparent;
+  font-size: 18px;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  transition: 300ms all;
+}
+section button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
